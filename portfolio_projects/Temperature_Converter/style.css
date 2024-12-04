@@ -1,0 +1,133 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: url("back-img.webp") no-repeat center center fixed; /* Add your background image */
+  background-size: cover; /* Make sure the image covers the entire background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+  opacity: 0.9; /* Slightly transparent background for text readability */
+}
+
+.container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Make the container semi-transparent */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+input {
+  padding: 15px;
+  width: 330px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #c50000;
+}
+
+/* Style for Reset button */
+#resetBtn {
+  background-color: #dc3545; /* Red background for reset */
+  margin: 10px 60px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#resetBtn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Style for the toggle button */
+#equilibriumBtn {
+  background-color: #ffc107; /* Yellow background */
+  color: black;
+  font-weight: bold;
+  margin: 0px 30px;
+}
+
+#equilibriumBtn:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+  color: rgb(0, 13, 83);
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    width: 90%; /* Adjust container width for mobile */
+  }
+
+  h1 {
+    font-size: 20px; /* Decrease heading size for mobile */
+  }
+
+  input {
+    width: 100%; /* Make the input fields responsive */
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  button {
+    padding: 10px 20px; /* Adjust button padding for smaller screens */
+    font-size: 14px; /* Reduce button font size for mobile */
+  }
+
+  h2 {
+    font-size: 18px; /* Decrease font size for subheadings */
+  }
+
+  #resetBtn,
+  #equilibriumBtn {
+    margin: 10px 5px; /* Adjust margin for buttons */
+  }
+}
